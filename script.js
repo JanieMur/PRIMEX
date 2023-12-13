@@ -4,7 +4,11 @@ let addedText = document.getElementById("line");
 
 const onChangeHandler = (e) => {
   console.log(e);
-  addText[e.name] = e.target.value;
+  addText[e.value] = e.target.value;
 };
 
 addedText.textContent = addText;
+
+const btnHandler = () => {
+  alert(`${addedText}`);
+};
